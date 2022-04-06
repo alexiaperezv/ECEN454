@@ -1,0 +1,61 @@
+initial
+
+begin 
+
+
+
+  cin = 1'b0;
+
+   X[0:7] = 8'b00000000;
+
+   Y[0:7] = 8'b00000000;
+
+   clk = 1'b0;
+
+
+
+   //begin test cases
+
+   //test 1
+
+   #20 X[0:7] = 8'b01111110; Y[0:7] = 8'b11100111; 
+
+   // test 2
+
+   #20 cin = 1'b1; X[0:7] = 8'b11111111; Y[0:7] = 8'b00000000;
+
+   // test 3
+
+   #20 X[0:7] = 8'b10101010; Y[0:7] = 8'b01010101; cin = 1'b0;
+
+   // test 4 
+
+   #20 cin = 1'b1;
+
+   // test 5
+
+   #20 cin = 1'b0; X[0:7] = 8'b11001100; Y[0:7] = 8'b00110011;
+
+   //test 6
+
+   #20 cin = 1'b1;
+
+   #50;
+
+   $finish;
+
+ 
+
+end 
+
+
+
+always
+
+	#10 clk = !clk;  
+
+	
+
+initial
+
+$monitor ($time," X[0:7]=%b, Y[0:7]=%b, clk=%b, _clk=%b, cin=%b, out[0:7]=%b, cout=%b", X[0:7], Y[0:7], clk, _clk, cin, out[0:7], cout);
