@@ -1,0 +1,2 @@
+Expression ,Value,Expression ,Value,Expression ,Value,Expression ,Value
+average(i("/V1/PLUS" ?result "tran")),-253.2E-9,average(v("/in" ?result "tran")),789.0E-3,average(i("/V1/PLUS" ?result "tran"))*average(v("/in" ?result "tran")),-199.7E-9,average(i("/V0/PLUS" ?result "tran"))*average(v("/in" ?result "tran")),-5.095E-6

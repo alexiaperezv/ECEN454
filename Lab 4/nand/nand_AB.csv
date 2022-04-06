@@ -1,0 +1,2 @@
+Expression ,Value
+average(v("/a" ?result "tran"))*average(v("/b" ?result "tran")),527.8E-3

@@ -1,0 +1,2 @@
+Expression ,Value,Expression ,Value
+average(i("/V0/PLUS" ?result "tran")),-6.535E-6,average(i("/V0/PLUS" ?result "tran"))*1.8,-11.76E-6
